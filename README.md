@@ -14,7 +14,8 @@ Upload Lighthouse traces to Google Drive
 `URL='https://www.cheaptickets.nl' npm run start`
 
 ## How
-`// 🕸
+```javascript
+// 🕸
 const url = process.env.URL || 'https://www.cheaptickets.nl';
 
 // 🚌
@@ -39,7 +40,8 @@ getRevision(url)
       revision,
       runner
     })
-  );`
+  );
+```
   
 ### TODO:
 1. Run inside a configurable, scheduled task runner
