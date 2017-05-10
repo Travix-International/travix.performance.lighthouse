@@ -1,0 +1,23 @@
+{
+  "globals": {
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "global-require": 0,
+    "import/imports-first": 0,
+    "import/prefer-default-export": 0,
+    "max-len": 0,
+    "new-cap": [2, {
+      "capIsNewExceptions": [
+      ]
+    }],
+    "no-case-declarations": 1,
+    "no-mixed-operators": 1,
+    "no-param-reassign": 1,
+    "no-prototype-builtins": 1,
+    "no-restricted-syntax": 1,
+    "no-underscore-dangle": [1],
+    "no-useless-constructor": 1,
+    "prefer-template": 1
+  }
+}

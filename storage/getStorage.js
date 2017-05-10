@@ -1,5 +1,11 @@
-const LocalStorage = require('node-localstorage').LocalStorage;
-
-const getStorage = (folder = 'data') => new LocalStorage(folder);
+/**
+ * Runs pwMetrics wrapped with credentials
+ *
+ * @method getStorage
+ * @param {string?} folder
+ * @returns {object} as LocalStorage
+ * @public
+ */
+const getStorage = ({ folder = 'data', LocalStorage }) => new LocalStorage(folder);
 
 module.exports = getStorage;

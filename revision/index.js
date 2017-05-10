@@ -1,6 +1,20 @@
-const { storage } = require('../storage');
+/**
+ * Encapsulation and dependency injection
+ */
 
-const getRevision = require('./getRevision');
+const {
+  storage
+} = require('../storage');
+
+const {
+  getRelease
+} = require('../release');
+
+const getRevision = (url) => require('./getRevision')({
+  url,
+  getRelease
+});
+
 const getLocalRevision = () => require('./getLocalRevision')(storage);
 const setLocalRevision = (value) => require('./setLocalRevision')(storage, value);
 
@@ -8,7 +22,7 @@ const setLocalRevision = (value) => require('./setLocalRevision')(storage, value
 storage;
 
 module.exports = {
-    getRevision,
-    getLocalRevision,
-    setLocalRevision
+  getRevision,
+  getLocalRevision,
+  setLocalRevision
 }
