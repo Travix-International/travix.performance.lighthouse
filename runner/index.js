@@ -7,7 +7,7 @@ const {
 } = require('../authenticate');
 
 const {
-  getPWAMetrics
+  getPWMetrics
 } = require('../metrics');
 
 const runner = require('./pwMetricsRunner');
@@ -19,5 +19,5 @@ module.exports = ({
   url,
   revision,
   getCredentials,
-  getPWAMetrics
+  getPWMetrics
 })

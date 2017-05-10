@@ -25,9 +25,9 @@ const bus = ({
   }
 
   return runner({
-    url,
-    revision
-  }).then(setLocalRevision(revision));
+      url,
+      revision
+    }).then(result => setLocalRevision(revision))
 }
 
 

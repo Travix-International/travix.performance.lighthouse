@@ -3,13 +3,13 @@ const PWMetrics = require('pwmetrics');
 /**
  * Calculates metrics from a rapper of lighthouse => https://github.com/paulirish/pwmetrics
  *
- * @method getPWAMetrics
+ * @method getPWMetrics
  * @param {string} url
  * @param {string?} clientSecret contains authentication inforation for google cloud
  * @returns {Promise} result from pwmetrics
  * @public
  */
-const getPWAMetrics = ({
+const getPWMetrics = ({
   url,
   clientSecret
 }) => new Promise((resolve, reject) => {
@@ -20,7 +20,9 @@ const getPWAMetrics = ({
     clientSecret
   });
 
-  return pwMetrics.start();
+  pwMetrics.start()
+    .then(resolve)
+    .catch(reject);
 });
 
-module.exports = getPWAMetrics;
+module.exports = getPWMetrics;

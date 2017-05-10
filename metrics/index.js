@@ -2,8 +2,8 @@
  * Encapsulation and dependency injection
  */
 
-const getPWAMetrics = require('./getPWMetrics');
+const getPWMetrics = require('./getPWMetrics');
 
 module.exports = {
-  getPWAMetrics,
+  getPWMetrics,
 }

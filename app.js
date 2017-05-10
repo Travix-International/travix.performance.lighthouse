@@ -1,5 +1,5 @@
 // 🕸
-const url = 'https://www.cheaptickets.nl';
+const url = process.env.URL || 'https://www.cheaptickets.nl';
 
 // 🚌
 const bus = require('./bus');

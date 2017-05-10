@@ -13,11 +13,14 @@ const getCredentials = (file) => new Promise((resolve, reject) => {
 
   fs.readFile(file, (err, content) => {
     if (err) {
-      reject(`Error loading client secret file: ${err}`);
-      return;
+      return reject(`Error loading client secret file: ${err}`);
     }
 
-    return resolve(JSON.parse(content));
+    try {
+      return resolve(JSON.parse(content));
+    } catch (e) {
+        return reject(`Error parsing file: ${err}`);
+    }
   })
 });
 
