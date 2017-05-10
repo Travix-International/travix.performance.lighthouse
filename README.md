@@ -15,21 +15,21 @@ Upload Lighthouse traces to Google Drive
 
 ## How
 ```javascript
-// 🕸
+🕸
 const url = process.env.URL || 'https://www.cheaptickets.nl';
 
-// 🚌
+🚌
 const bus = require('./bus');
 
-// 🏃
+🏃
 const runner = require('./runner');
 
-// 🔢
+🔢
 const {
   getRevision,
 } = require('./revision');
 
-// 🚀
+🚀
 getRevision(url)
   .then(({
       url,
