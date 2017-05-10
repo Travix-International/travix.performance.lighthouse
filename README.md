@@ -13,6 +13,34 @@ Upload Lighthouse traces to Google Drive
 ## Run
 `URL='https://www.cheaptickets.nl' npm run start`
 
+## How
+// 🕸
+const url = process.env.URL || 'https://www.cheaptickets.nl';
+
+// 🚌
+const bus = require('./bus');
+
+// 🔢
+const {
+  getRevision,
+} = require('./revision');
+
+// 🏃
+const runner = require('./runner');
+
+// 🚀
+getRevision(url)
+  .then(({
+      url,
+      revision
+    }) =>
+    bus({
+      url,
+      revision,
+      runner
+    })
+  );
+  
 ### TODO:
 1. Run inside a configurable, scheduled task runner
 2. Create more cloud storeage options (Firebase, Amazon etc...)
