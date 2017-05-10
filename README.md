@@ -4,14 +4,14 @@ Analyzes web apps and web pages, collecting modern performance metrics and insig
 ## Install
 `npm install`
 
+## Run
+`URL='https://www.cheaptickets.nl' npm run start`
+
 ## Uplading to cloud
 Upload Lighthouse traces to Google Drive
 
 1. Setup Google Developer project and get credentials. https://developers.google.com/drive/v3/web/quickstart/nodejs
 2. Download and rename it as client_secret.json put it to the root
-
-## Run
-`URL='https://www.cheaptickets.nl' npm run start`
 
 ## How
 ```javascript
