@@ -45,6 +45,6 @@ getRevision(url)
   
 ### TODO:
 1. Run inside a configurable, scheduled task runner
-2. Create more cloud storeage options (Firebase, Amazon etc...)
+2. Create more cloud storage options (Firebase, Amazon etc...)
 3. Url based release tracking, currently tracking only one
 4. TESTS!
