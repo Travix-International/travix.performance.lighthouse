@@ -8,7 +8,7 @@ Analyzes web apps and web pages, collecting modern performance metrics and insig
 `npm run start`
 
 ## Cloud
-Upload Lighthouse traces to the Google Drive
+Upload metrics into Google Drive
 
 1. Setup Google Developer project and get credentials. https://developers.google.com/drive/v3/web/quickstart/nodejs
 2. Save configuration as client_secret.json in the root directory
