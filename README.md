@@ -1,14 +1,14 @@
-# Release based performance tracking for travix websites
+# Release based performance tracking for Travix websites
 Analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.
 
 ## Install
 `npm install`
 
 ## Run
-`URL='https://www.cheaptickets.nl' npm run start`
+`npm run start`
 
-## Uplading to cloud
-Upload Lighthouse traces to Google Drive
+## Cloud
+Upload Lighthouse traces to the Google Drive
 
 1. Setup Google Developer project and get credentials. https://developers.google.com/drive/v3/web/quickstart/nodejs
 2. Download and rename it as client_secret.json put it to the root
@@ -42,9 +42,15 @@ getRevision(url)
     })
   );
 ```
+
+## Links
+* https://developers.google.com/web/tools/lighthouse/
+* https://github.com/paulirish/pwmetrics
+* https://hackernoon.com/easy-progressive-web-metrics-9afa5ed857c2
   
 ### TODO:
-1. Run inside a configurable, scheduled task runner
-2. Create more cloud storage options (Firebase, Amazon etc...)
-3. Url based release tracking, currently tracking only one
-4. TESTS!
+* Run inside a configurable, scheduled task runner
+* Create cloud storage options (Firebase, Amazon etc...)
+* Store url with revision in local storage
+* TESTS!
+* Create default configuration file, more => https://github.com/paulirish/pwmetrics
