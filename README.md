@@ -7,6 +7,8 @@ Analyzes web apps and web pages, collecting modern performance metrics and insig
 ## Run
 `npm run start`
 
+![Sample printout](sample-printout.png?raw=true "Sample printout")
+
 ## Cloud
 Upload metrics into Google Drive
 
