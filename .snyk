@@ -1,0 +1,17 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - pwmetrics > lighthouse > debug:
+        patched: '2021-04-07T08:33:03.966Z'
+  'npm:marked:20170907':
+    - pwmetrics > lighthouse > marked:
+        patched: '2021-04-07T08:33:03.966Z'
+  'npm:ms:20170412':
+    - pwmetrics > lighthouse > debug > ms:
+        patched: '2021-04-07T08:33:03.966Z'
+  'npm:ws:20160920':
+    - pwmetrics > lighthouse > ws:
+        patched: '2021-04-07T08:33:03.966Z'
